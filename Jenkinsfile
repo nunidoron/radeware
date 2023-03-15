@@ -1,4 +1,4 @@
-properties([parameters([string(description: 'Please add the file path', name: 'path')])])
+properties([pipelineTriggers([pollSCM('* * * * *')])])
 pipeline {
     agent any
 
